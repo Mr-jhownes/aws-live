@@ -1,0 +1,11 @@
+POST /CreateChannel HTTP/1.1;
+Content-type: application/json;
+
+{
+    "authorized": true,
+    "latencyMode": "String", // LOW OR NORMAL ONLY 
+    "name": "String", //^[a-zA-Z0-9-_]*$,
+    "recordingConfigurationArn": "String", //^$|^arn:aws:ivs:[a-z0-9-]+:[0-9]+:recording-configuration/[a-zA-Z0-9-]+$,
+    
+    "type": "String" //STANDARD OR LOW
+ }
